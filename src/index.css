@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+:root {
+  --accent: 61 70% 52%;
+  --danger: 4 69% 50%;
+  --border: 200 26% 54%;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply text-sm font-sans bg-slate-300;
+  }
+}
+@layer utilities {
+  .custom-border {
+    border-radius: 0 0 0 3rem;
+  }
+}
